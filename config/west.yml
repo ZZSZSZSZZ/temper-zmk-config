@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: yangxing
+      url-base: https://github.com/yangxing844
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.2.1
       import: app/west.yml
+    - name: zmk-lpm009m360a-driver
+      remote: yangxing
+      revision: master
   self:
     path: config
